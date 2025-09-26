@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Variáveis - Cantina</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Variáveis na Cantina</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Bem-vindo à Cantina da Escola!</h1>
-    <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Variáveis - Cantina</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Bem-vindo à Cantina da Escola!</h1>
-    
-    <div class="resultados">
-        <p>Temos <span id="quantidadeSalgados">20</span> salgados disponíveis.</p>
-        <p>Cada salgado custa R$<span id="precoSalgado">5</span>.</p>
-        <p>A cantina vendeu R$<span id="totalVendido">25</span> até agora.</p>
+  <header>
+    <h1>🍽️ Cantina da Escola</h1>
+    <p class="subtitulo">Explorando var, let e const</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <p><strong>Nome da Cantina:</strong> <span id="nomeCantina"></span></p>
+      <p><strong>Salgados disponíveis:</strong> <span id="quantidadeSalgados"></span></p>
+      <p><strong>Preço por salgado:</strong> R$<span id="precoSalgado"></span></p>
+      <p><strong>Total vendido:</strong> R$<span id="totalVendido"></span></p>
+    </section>
+
+    <button onclick="venderSalgados()">Vender 5 Salgados</button>
+    <button onclick="testarConst()">Testar alteração de const</button>
+    <button onclick="testarEscopo()">Testar escopo de var/let</button>
+
+    <div class="console">
+      <h2>🖥️ Console</h2>
+      <pre id="consoleLog"></pre>
     </div>
-    
-    <script src="script.js"></script>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cantina Escolar</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
