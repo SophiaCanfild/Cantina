@@ -3,31 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Variáveis na Cantina</title>
+  <title>Cantina Escolar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🍽️ Cantina da Escola</h1>
-    <p class="subtitulo">Explorando var, let e const</p>
+    <h1>🍽️ Cantina Escolar</h1>
+    <p class="subtitulo">Acompanhe o estoque e vendas em tempo real!</p>
   </header>
 
   <main>
     <section class="painel">
-      <p><strong>Nome da Cantina:</strong> <span id="nomeCantina"></span></p>
-      <p><strong>Salgados disponíveis:</strong> <span id="quantidadeSalgados"></span></p>
-      <p><strong>Preço por salgado:</strong> R$<span id="precoSalgado"></span></p>
-      <p><strong>Total vendido:</strong> R$<span id="totalVendido"></span></p>
+      <p>📦 Salgados disponíveis: <span id="quantidadeSalgados">20</span></p>
+      <p>💰 Preço unitário: R$<span id="precoSalgado">5</span></p>
+      <p>🧾 Total vendido: R$<span id="totalVendido">25</span></p>
     </section>
 
-    <button onclick="venderSalgados()">Vender 5 Salgados</button>
-    <button onclick="testarConst()">Testar alteração de const</button>
-    <button onclick="testarEscopo()">Testar escopo de var/let</button>
-
-    <div class="console">
-      <h2>🖥️ Console</h2>
-      <pre id="consoleLog"></pre>
-    </div>
+    <button onclick="venderSalgado()">Vender 1 Salgado</button>
   </main>
 
   <footer>
